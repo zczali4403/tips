@@ -34,4 +34,12 @@ CMplot(alp_a2_b2_c2, plot.type="m", LOG10=TRUE, ylim=c(0,80), threshold=c(1e-6,1
        threshold.col=c("black","grey"), amplify=F,
        file="jpg",memo="",dpi=1200,
        file.output=TRUE,verbose=TRUE,cex = 0.1)
-![微信图片_20221018155409](https://user-images.githubusercontent.com/105405121/196370429-61bdd596-25ed-4185-bc7f-0d2da77d5a82.jpg)
+
+8、用subset函数提取数据
+subset(data,pval <= 5e-8)   格式为subset(data,列名<数值)
+注意这里需要用<=不能用<-
+
+9、用separate函数将一列分解为多列，以某种字符为分隔标志
+separate函数是dplyr包里的
+gwas <- separate(gwas,col = "chr_position",into = c("chr","pos"),sep = "_",remove = FALSE)
+remove为FALSE表示不去除原来的列
