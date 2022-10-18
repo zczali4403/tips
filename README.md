@@ -5,7 +5,7 @@ Some tips used during learning
 gwas <- na.omit(gwas)
 
 2、在一列中添加字母X
-gwas$chr <- paste("X",gwas$chr,"")
+gwas$chr <- paste("X",gwas$chr,,sep="")
 
 3、R中通过tidyr将两列数据合成一列
 gwas <- unite(gwas,"chr_pos",chr,pos,sep = "-" remove= FALSE)
