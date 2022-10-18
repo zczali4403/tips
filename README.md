@@ -34,4 +34,4 @@ CMplot(alp_a2_b2_c2, plot.type="m", LOG10=TRUE, ylim=c(0,80), threshold=c(1e-6,1
        threshold.col=c("black","grey"), amplify=F,
        file="jpg",memo="",dpi=1200,
        file.output=TRUE,verbose=TRUE,cex = 0.1)
-![image](https://user-images.githubusercontent.com/105405121/196370191-dc0fcd26-3670-4180-a619-b0f4b531107a.png)
+![微信图片_20221018155409](https://user-images.githubusercontent.com/105405121/196370429-61bdd596-25ed-4185-bc7f-0d2da77d5a82.jpg)
