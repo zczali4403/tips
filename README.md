@@ -20,8 +20,10 @@ input <- merge(eqtl,gwas,by = "rs_id",all = FALSE)
 all为FALSE的含义是仅返回两数据框中匹配的数据行
 
 6、给R中的列重命名
+默认为dplyr中的rename
 dplyr和plyr中的rename函数是不一样的
 dplyr::rename(data,new=old)
 plyr::rename(data,c(old=new))
 dplyr::rename(d, two=old2, three=old3)
 plyr::renmame(d,c("old2" = "two","old3" = "three"))
+alp <- rename(alp,rs_id = snpid)
