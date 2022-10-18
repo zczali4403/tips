@@ -27,3 +27,11 @@ plyr::rename(data,c(old=new))
 dplyr::rename(d, two=old2, three=old3)
 plyr::renmame(d,c("old2" = "two","old3" = "three"))
 alp <- rename(alp,rs_id = snpid)
+
+7、用CMplot画多track的曼哈顿图
+CMplot(alp_a2_b2_c2, plot.type="m", LOG10=TRUE, ylim=c(0,80), threshold=c(1e-6,1e-4),multracks = TRUE
+       threshold.lty=c(1,2),threshold.lwd=c(1,1),
+       threshold.col=c("black","grey"), amplify=F,
+       file="jpg",memo="",dpi=1200,
+       file.output=TRUE,verbose=TRUE,cex = 0.1)
+![image](https://user-images.githubusercontent.com/105405121/196370191-dc0fcd26-3670-4180-a619-b0f4b531107a.png)
