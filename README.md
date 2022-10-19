@@ -43,3 +43,7 @@ subset(data,pval <= 5e-8)   格式为subset(data,列名<数值)
 separate函数是dplyr包里的
 gwas <- separate(gwas,col = "chr_position",into = c("chr","pos"),sep = "_",remove = FALSE)
 remove为FALSE表示不去除原来的列
+
+10、提取GWAS数据中显著性位点的上下游区域
+#假定显著位点是rs3131972，他的位置是817341，那么我们提取上下游100kb的位点的话，范围就是chr1:717341-917341,代码就是:
+gwas_coloc=gwas %>% filter(chr %in% "1") %>% filter(pos>717341 & pos<917341)
