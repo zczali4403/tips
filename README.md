@@ -71,4 +71,5 @@ toupper()转换为大写字母
 ALP_not_NA_gwas <- na.omit(ALP_not_NA_gwas)
 na.omit()返回的是去除了缺失值所在的行之后的变量，然后将此变量赋给原变量，即可得到去除了缺失值所在行的变量
 
-16、
+16、将两个列完全一致的数据框合并在一起
+ALP_not_NA_final <- rbind(ALP_not_NA,ALP_not_NA_gwas)
