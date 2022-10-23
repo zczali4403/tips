@@ -62,3 +62,7 @@ bad.ALP <- is.na(ALP$variant_id) # bad.ALP为和ALP行数一致的对应的布�
 随后提取行
 ALP_NA <- ALP[bad.ALP,] # ALP_NA为variant_id这一列为缺失值的行数据
 ALP_not_NA <- ALP[!bad.ALP,] # ALP_not_NA为variant_id这一列为非缺失值的行数据
+
+14、R中大小写字母转换
+tolower()将大写字母转换为小写字母
+toupper()转换为大写字母
