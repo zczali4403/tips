@@ -52,3 +52,6 @@ gwas_coloc=gwas %>% filter(chr %in% "1") %>% filter(pos>717341 & pos<917341)
 独立显著位点的p小于5e-8，位点之间的r2小于0.6，r2指的是LD的r2值，不是相关性，0.6是主流，但是也有设置成其他数值的
 Lead SNP是独立显著位点中r2小于0l的，同样，只是主流是0.1
 FUMA(https://fuma.ctglab.nl/snp2gene) 
+
+12、
+GRCh38相当于hg38，GRCh37相当于hg19
