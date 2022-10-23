@@ -55,3 +55,10 @@ FUMA(https://fuma.ctglab.nl/snp2gene)
 
 12、
 GRCh38相当于hg38，GRCh37相当于hg19
+
+13、从原始数据中提取某一列为缺失值的行
+ALP
+bad.ALP <- is.na(ALP$variant_id) # bad.ALP为和ALP行数一致的对应的布尔值变量 若某一行variant_id这一列为NA则该行对应的布尔值为TRUE
+随后提取行
+ALP_NA <- ALP[bad.ALP,] # ALP_NA为variant_id这一列为缺失值的行数据
+ALP_not_NA <- ALP[!bad.ALP,] # ALP_not_NA为variant_id这一列为非缺失值的行数据
